@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <center>
+          <span>DannyCodes</span>
+          <span>Number</span>
+          <span>Guessing Game!</span>
+        </center>
+        <h4>
+          My Number Guessing Game! <br />
+          You get 2 pts for a Correct Guess
+        </h4>
+        <div class="score">Score: 0</div>
+
+        <div class="question" style="margin-bottom: 1rem"></div>
+        <center><div class="hint"></div></center>
+        <div>
+          <center>
+            <input
+              type="tel"
+              placeholder="Enter the number"
+              maxlength="2"
+              id="number"
+              pattern="\d+"
+            />
+          </center>
+        </div>
+        <div id="guessBtn">
+          <button id="start">Start</button>
+          <center><button class="Btn">Submit</button></center>
+          <div class="reGuess">
+            <h3>Not Correct!</h3>
+            <center><button class="reGuessBtn">Guess Again</button></center>
+            <marquee
+              >&quot;Always Remeber, Giving Up isn&apos;t the right
+              choice.☺</marquee
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

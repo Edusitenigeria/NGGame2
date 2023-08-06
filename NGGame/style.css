@@ -1,0 +1,152 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: color-mix(in srgb, red 80%, blue 60%);
+}
+
+.container {
+  display: grid;
+  align-items: center;
+  border: 2px solid black;
+  background-color: dimgray;
+  height: 900px;
+}
+
+.wrapper {
+  margin-top: 0;
+  border: none;
+  border-radius: 50px;
+  height: fit-content;
+}
+
+.wrapper div {
+  text-align: center;
+  font-size: larger;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17.9px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#number {
+  display: none;
+  text-align: center;
+  height: 40px;
+  border: 2px solid black;
+  max-width: 190px;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+  outline: none;
+  color: dimgray;
+  font-size: 30px;
+}
+
+#number:invalid {
+  animation: justshake 0.3s forwards;
+  color: red;
+}
+
+@keyframes justshake {
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+button {
+  width: fit-content;
+  min-width: 100px;
+  height: 45px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2.5px solid #e0e1e4;
+  box-shadow: 0px 0px 20px -20px;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.2s ease-in-out 0ms;
+  user-select: none;
+  font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 20px -18px;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+h3,
+.reGuessBtn {
+  display: none;
+  margin-top: 5rem;
+}
+
+.Btn {
+  margin-top: 5rem;
+  display: none;
+}
+
+#start {
+  margin-top: 5rem;
+}
+
+.hint {
+  border: 2px solid white;
+  color: balck;
+  margin-bottom: 3rem;
+  border-radius: 20px;
+  padding-bottom: 4px;
+  box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+}
+span {
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 900px) {
+  button {
+    font-size: 20px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+}
+
+span:nth-child(1) {
+  animation: fadeIn 1s ease-in;
+}
+span:nth-child(2) {
+  animation: fadeIn 4s ease-in;
+}
+span:nth-child(3) {
+  animation: fadeIn 6s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(2);
+  }
+}
